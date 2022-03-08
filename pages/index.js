@@ -1,6 +1,8 @@
+import Confirm from "../components/Confirm"
 import LocationSelector from "../components/LocationSelector"
 import Map from "../components/Map"
 import Navbar from "../components/Navbar"
+import RideSelector from "../components/RideSelector"
 
 // to write multiple classes for css 
 const style = {
@@ -21,6 +23,8 @@ export default function Home() {
       <div className={style.rideRequestContainer}>
         <div className={style.rideRequest}>
         <LocationSelector/>
+        <Confirm/>
+        <RideSelector/>
         {/* confirm ride */}
         </div>
       </div>
